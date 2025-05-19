@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>MEP Installation Services Oman | Mechanical, Electrical & Plumbing Contractors | AL WEJHA GROUP</title>
-  <meta name="description" content="AL WEJHA GROUP: Premier MEP Installation Services in Oman - Expert HVAC, Electrical & Plumbing Solutions for Commercial/Industrial Projects. Certified Contractors in Muscat, Sohar, Salalah.">
-  <meta name="keywords" content="MEP Installation Oman, MEP Contractors Oman, HVAC Services Oman, Electrical Installation Oman, Plumbing Systems Oman, Fire Protection Oman">
+  <title>MEP Contractors in Oman | Mechanical, Electrical & Plumbing Services | AL WEJHA GROUP</title>
+  <meta name="description" content="Professional MEP Installation Services in Muscat, Sohar & Salalah. AL WEJHA GROUP provides integrated mechanical, electrical and plumbing solutions for commercial/industrial projects.">
+  <meta name="keywords" content="MEP contractors Oman, HVAC installation Muscat, electrical systems Sohar, plumbing services Salalah, MEP maintenance Oman">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mep-installation-services-oman.alwejhagroup.com/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <style>
     :root {
       --mechanical-blue: #3498db;
@@ -116,6 +116,7 @@
       margin: 60px 0 40px;
       box-shadow: 0 15px 30px rgba(0,0,0,0.12);
       border: 1px solid rgba(0,0,0,0.08);
+      background: #e3f2fd;
     }
     
     .tri-column {
@@ -144,6 +145,17 @@
       border-top: 4px solid var(--plumbing-green);
     }
     
+    .region-badge {
+      display: inline-block;
+      background: rgba(0,0,0,0.08);
+      color: var(--dark-blue);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 0.3rem;
+      font-weight: 500;
+    }
+    
     .cta-section {
       background: linear-gradient(135deg, var(--dark-blue), #1a2634);
       color: white;
@@ -153,17 +165,6 @@
       text-align: center;
       position: relative;
       overflow: hidden;
-    }
-    
-    .cta-section::before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      width: 150px;
-      height: 150px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff10"><path d="M50,10L60,40H90L65,60L75,90L50,75L25,90L35,60L10,40H40Z"/></svg>');
-      background-size: contain;
     }
     
     .cta-button {
@@ -211,7 +212,7 @@
 <body>
   <header>
     <h1>MEP Installation Services Oman</h1>
-    <p>Integrated Mechanical, Electrical & Plumbing Solutions for Industrial & Commercial Facilities</p>
+    <p>Integrated Mechanical, Electrical & Plumbing Solutions</p>
   </header>
 
   <nav>
@@ -225,10 +226,15 @@
   </nav>
 
   <div class="container">
-    <img class="hero-img" 
-         src="./mep-installation-services-oman.webp" 
-         alt="MEP Installation Services in Oman - HVAC, Electrical & Plumbing Systems"
-         loading="eager">
+    <!-- Hero Image with Fallback -->
+    <picture>
+      <source srcset="/mep-installation-hero.webp" type="image/webp">
+      <source srcset="/mep-installation-hero.jpg" type="image/jpeg">
+      <img class="hero-img" 
+           src="/mep-installation-hero.jpg" 
+           alt="MEP Installation Services in Oman - AL WEJHA GROUP"
+           loading="eager">
+    </picture>
 
     <section>
       <h2><i class="fas fa-bolt" style="color: var(--electrical-yellow);"></i> <i class="fas fa-cog" style="color: var(--mechanical-blue);"></i> <i class="fas fa-tint" style="color: var(--plumbing-green);"></i> Our MEP Services</h2>
@@ -237,6 +243,11 @@
       <div class="tri-column">
         <div class="service-column mechanical-column">
           <h3><i class="fas fa-fan" style="color: var(--mechanical-blue);"></i> Mechanical Services</h3>
+          <div class="region-badges">
+            <span class="region-badge">Muscat</span>
+            <span class="region-badge">Sohar</span>
+            <span class="region-badge">Salalah</span>
+          </div>
           <ul>
             <li>HVAC system installation & maintenance</li>
             <li>Ductwork fabrication & installation</li>
@@ -247,6 +258,11 @@
         
         <div class="service-column electrical-column">
           <h3><i class="fas fa-bolt" style="color: var(--electrical-yellow);"></i> Electrical Services</h3>
+          <div class="region-badges">
+            <span class="region-badge">Nizwa</span>
+            <span class="region-badge">Barka</span>
+            <span class="region-badge">Sur</span>
+          </div>
           <ul>
             <li>High & low voltage systems installation</li>
             <li>Lighting control systems</li>
@@ -257,6 +273,11 @@
 
         <div class="service-column plumbing-column">
           <h3><i class="fas fa-tint" style="color: var(--plumbing-green);"></i> Plumbing Services</h3>
+          <div class="region-badges">
+            <span class="region-badge">Duqm</span>
+            <span class="region-badge">Ibri</span>
+            <span class="region-badge">Rustaq</span>
+          </div>
           <ul>
             <li>Water supply & distribution systems</li>
             <li>Sewage & drainage solutions</li>
@@ -268,28 +289,38 @@
     </section>
 
     <section class="cta-section">
-      <h2>Need Professional MEP Solutions?</h2>
-      <p>Contact our certified MEP engineers in Oman</p>
+      <h2>Professional MEP Solutions Across Oman</h2>
+      <p>Contact our certified MEP engineers</p>
       <div>
         <a href="https://www.alwejhagroup.com/contact" class="cta-button"><i class="fas fa-paper-plane"></i> Request Consultation</a>
-        <a href="https://www.alwejhagroup.com/our-projects" class="cta-button"><i class="fas fa-project-diagram"></i> View Projects</a>
+        <a href="tel:+96879271055" class="cta-button"><i class="fas fa-phone"></i> +968 7927 1055</a>
       </div>
     </section>
 
     <section style="background: rgba(52,152,219,0.05); padding: 40px; border-radius: 8px; border-left: 4px solid var(--spark-orange);">
-      <h2><i class="fas fa-star" style="color: var(--spark-orange);"></i> Why Choose Us?</h2>
+      <h2><i class="fas fa-certificate" style="color: var(--spark-orange);"></i> Why Choose Us?</h2>
       <ul>
         <li>Oman Ministry of Commerce certified</li>
-        <li>Years of MEP experience</li>
-        <li>Energy-efficient system designs</li>
+        <li>10+ years MEP experience</li>
         <li>24/7 emergency support</li>
+        <li>Local teams in all regions</li>
       </ul>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 AL WEJHA GROUP | MEP Installation Services Division</p>
-    <p>Serving Muscat, Sohar, Salalah and all industrial zones in Oman</p>
+    <p>&copy; 2025 AL WEJHA GROUP | MEP Installation Services</p>
+    <p>Serving Muscat, Sohar, Salalah, Nizwa, Duqm & All Industrial Zones</p>
   </footer>
+
+  <!-- Image Loading Fallback Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const heroImg = document.querySelector('.hero-img');
+      if (heroImg.naturalWidth === 0) {
+        heroImg.src = '/mep-installation-hero.jpg';
+      }
+    });
+  </script>
 </body>
 </html>
